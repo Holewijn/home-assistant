@@ -1,2 +1,69 @@
 
 secrets.yaml
+LICENSE
+home-assistant.log
+home-assistant_v2.db
+Home Assistant-2f7fd9e17963.json
+google_calendars.yaml
+configuration-sample.yaml
+.HA_VERSION
+themes
+www/community
+www/dwains-theme
+www/lovelace-flower-card
+dwains-theme/plugins
+dwains-theme/views
+
+
+
+.storage
+.cloud
+custom_components
+
+# Ignore files.
+.google.token
+.homekit.state
+.ios.conf
+*.db
+*.db-shm
+*.db-wal
+*.disable
+*.log
+*.pyc
+._*
+aircast.xml
+home-assistant.log
+options.xml
+OZW_Log.txt
+pyozw.sqlite
+zwcfg_*
+zwscene.xml
+
+# Ignore folders.
+.cloud
+.storage
+appdaemon
+deps
+glances
+node-red
+tts
+_OLD
+www/images/snapshots
+www/dwains-theme/fonts
+
+# ESPHome ignores
+esphome/secrets.yaml
+esphome/*/*
+
+# Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
+google_assistant_service_account.json
+google_calendars.yaml
+ip_bans.yaml
+secrets.yaml
+known_devices.yaml
+
+# Ignore Python cache files
+__pycache__/
+
+# Specific keeps
+!.gitkeep
