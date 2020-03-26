@@ -1,0 +1,25 @@
+# Own resources?
+# Add here your own resources
+#
+
+# - type: module
+#   url: /to_your_folder/filename.js
+
+- url: /community_plugin/air-visual-card/air-visual-card.js
+  type: js
+
+# Bar Card
+- url: /hacsfiles/bar-card/bar-card.js
+  type: js
+# Swipe Card
+- url: /hacsfiles/swipe-card/swipe-card.js
+  type: module
+# Mini Media Player
+- url: /community_plugin/mini-media-player/mini-media-player-bundle.js
+  type: module
+# card-tools
+- url: /hacsfiles/lovelace-card-tools/card-tools.js
+  type: module
+# Flower Card
+- url: /community_plugin/lovelace-flower-card/flower-card.js
+  type: module

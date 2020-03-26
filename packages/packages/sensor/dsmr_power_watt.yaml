@@ -1,0 +1,8 @@
+# DSMR Reader
+sensor:
+  - platform: template
+    sensors:
+      power_consumption_watt:
+        friendly_name: "Power Consumption Watt"
+        unit_of_measurement: "W"
+        value_template: "{{ states('sensor.dsmr_reading_electricity_currently_delivered') | float * 1000 }}"

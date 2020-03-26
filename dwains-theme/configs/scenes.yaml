@@ -1,0 +1,11 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/scenes.html
+
+scenes:
+   - entity: scene.naarbed
+     icon: fas:couch
+     icon_color: '#ffffff'
+     background: 'linear-gradient( 135deg, #FEB692 10%, #EA5455 100%)'
+   - entity: scene.slaapkamer_normal
+     icon: fas:couch
+     icon_color: '#ffffff'
+     background: 'linear-gradient( 135deg, #FEB692 10%, #EA5455 100%)'

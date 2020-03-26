@@ -1,0 +1,6 @@
+# Light Groups
+group:
+  office_room_lights:
+    name: Office Lights
+    entities:
+      - light.kantoor

@@ -1,0 +1,15 @@
+automation:
+  - id: '233202004'
+    alias: '[ Notificatie ] DelugeVPN Docker is Offline'
+    description: 'DelugeVPN docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202004
+      domain: switch
+      entity_id: switch.tower_docker_binhex_delugevpn
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: DelugeVPN Docker is offline!
+      service: notify.notify

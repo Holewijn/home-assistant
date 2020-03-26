@@ -1,0 +1,10 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/more_page.html
+
+more_page:
+  addons:
+    - name: UnRAID
+      icon: fas:server
+      path: 'dwains-theme/addons/more_page/unraid/page.yaml'
+    - name: Coronavirus
+      icon: fas:biohazard
+      path: 'dwains-theme/addons/more_page/coronavirus/page.yaml'

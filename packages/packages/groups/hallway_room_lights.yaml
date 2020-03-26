@@ -1,0 +1,6 @@
+# Light Groups
+group:
+  hallway_room_lights:
+    name: Hallway Lights
+    entities:
+      - light.entree

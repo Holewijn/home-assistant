@@ -1,0 +1,15 @@
+sensor:
+# Weather
+
+  - platform: moon
+
+  - platform: season
+    type: astronomical
+    
+# Weather Sensors
+  - platform: darksky
+    api_key: !secret darksky
+    monitored_conditions:
+      - temperature
+      - humidity
+    language: nl

@@ -1,0 +1,15 @@
+automation:
+  - id: '233202009'
+    alias: '[ Notificatie ] Plexmedia Docker is Offline'
+    description: 'Plexmedia docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202009
+      domain: switch
+      entity_id: switch.tower_docker_binhex_plex
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: Plexmedia Docker is offline!
+      service: notify.notify

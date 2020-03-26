@@ -1,0 +1,60 @@
+- type: vertical-stack
+  cards:
+    - type: entities
+      style: |
+        ha-card {
+          padding: 8px;
+          background-color: var(--dwains-theme-primary);
+        }
+      entities:
+        #- entity: {{ (data | fromjson)['entity'] }}
+        - entity: media_player.ziggobox_next_woonkamer
+          artwork: full-cover-fit
+          group: true
+          name: Ziggo Next
+          info: scroll
+          type: 'custom:mini-media-player'
+          hide:
+            power: false
+            artwork_border: true
+            icon: false
+            source: false
+            icon_state: false
+            power_color: false
+#          speaker_group:
+#            platform: sonos
+#            show_group_count: true
+#            entities:
+#             - entity_id: media_player.woonkamer
+#                name: Woonkamer
+#              - entity_id: media_player.eetkamer
+#                name: Eetkamer
+#              - entity_id: media_player.boven
+#                name: Boven
+#              - entity_id: media_player.tuin
+#                name: Tuin
+          shortcuts:
+            columns: 3
+            hide_when_off: true
+            label: Select Input
+            align_text: center
+            buttons:
+              - name: Discovery
+                type: source
+                id: Discovery HD
+              - name: Ziggo Sport
+                type: source
+                id: Ziggo Sport HD
+              - name: National Geographic
+                type: source
+                id: National Geographic Channel HD
+              - name: XITE
+                type: source
+                id: XITE HD
+              - name: NPO 1
+                type: source
+                id: NPO 1 HD
+              - name: RTL 7
+                type: source
+                id: RTL 7 HD                                
+ 

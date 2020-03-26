@@ -1,0 +1,15 @@
+automation:
+  - id: '233202008'
+    alias: '[ Notificatie ] NZBGetVPN Docker is Offline'
+    description: 'NZBGetVPN docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202008
+      domain: switch
+      entity_id: switch.tower_docker_nzbgetvpn
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: NZBGetVPN Docker is offline!
+      service: notify.notify

@@ -1,0 +1,57 @@
+- type: vertical-stack
+  cards:
+    - type: entities
+      style: |
+        ha-card {
+          padding: 8px;
+          background-color: var(--dwains-theme-primary);
+        }
+      entities:
+        #- entity: {{ (data | fromjson)['entity'] }}
+        - entity: media_player.samsung_tv_remote
+          group: true
+          artwork: cover
+          name: Samsung TV
+          info: scroll
+          type: 'custom:mini-media-player'
+          hide:
+            power: false
+            artwork_border: true
+            icon: false
+            source: false
+            icon_state: false
+            power_color: false
+#          speaker_group:
+#            platform: sonos
+#            show_group_count: true
+#            entities:
+#             - entity_id: media_player.woonkamer
+#                name: Woonkamer
+#              - entity_id: media_player.eetkamer
+#                name: Eetkamer
+#              - entity_id: media_player.boven
+#                name: Boven
+#              - entity_id: media_player.tuin
+#                name: Tuin
+          shortcuts:
+            columns: 3
+            hide_when_off: true
+            label: Select Input
+            align_text: center
+            buttons:
+              - name: TV
+                type: source
+                id: TV
+              - name: Chromecast
+                type: source
+                id: Chromecast
+              - name: Spotify
+                type: source
+                id: Spotify
+              - name: Netflix
+                type: source
+                id: Netflix
+              - name: YouTube
+                type: source
+                id: YouTube                                
+ 

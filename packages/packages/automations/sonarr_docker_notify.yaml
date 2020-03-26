@@ -1,0 +1,15 @@
+automation:
+  - id: '233202011'
+    alias: '[ Notificatie ] Sonarr Docker is Offline'
+    description: 'Sonarr docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202011
+      domain: switch
+      entity_id: switch.tower_docker_binhex_sonarr
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: Sonarr Docker is offline!
+      service: notify.notify

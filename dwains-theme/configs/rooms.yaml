@@ -1,0 +1,65 @@
+rooms:
+  - name: Gang
+    icon: fas:key
+    light: group.hallway_room_lights
+    door: binary_sensor.door_sensor_front_door
+    humidity: sensor.multi_sensor_hallway_3
+    temperature: sensor.multi_sensor_hallway_2
+    motion: binary_sensor.motion_sensor
+
+  - name: Huiskamer
+    icon: fas:couch
+    light: group.living_room_lights
+    door: binary_sensor.door_sensor_hallway_door
+    humidity: sensor.multi_sensor_living_room
+    temperature: sensor.multi_sensor_living_room_3
+    addons:
+      - name: Olijfboom
+        icon: fas:leaf
+        # icon: fal:spa
+        path: 'dwains-theme/addons/rooms/woonkamer/plant/page.yaml'
+        button_path: 'dwains-theme/addons/rooms/woonkamer/plant/button.yaml'
+        data:
+          entity: plant.olijfboom_links
+      - name: Ziggo Next
+        icon: fas:tv
+        path: 'dwains-theme/addons/rooms/woonkamer/ziggonext/page.yaml'
+        button_path: 'dwains-theme/addons/rooms/woonkamer/ziggonext/button.yaml'
+        data:
+          entity: media_player.ziggobox_next_woonkamer
+      - name: Samsung TV
+        icon: fas:tv
+        path: 'dwains-theme/addons/rooms/woonkamer/samsungtv/page.yaml'
+        button_path: 'dwains-theme/addons/rooms/woonkamer/samsungtv/button.yaml'
+        data:
+          entity: media_player.samsung_tv_remote
+
+
+
+  - name: Keuken
+    icon: fas:utensils
+    
+
+  - name: Kantoor
+    icon: fas:desktop
+    light: group.office_room_lights
+ 
+  - name: Toilet
+    icon: fas:toilet-paper
+    
+
+  - name: Douche
+    icon: fas:shower
+  
+
+  - name: Slaapkamer
+    icon: fas:bed
+
+
+  - name: Gasten Slaapkamer
+    icon: fas:bed
+
+
+  - name: Gang Boven 
+    icon: fas:walking
+  

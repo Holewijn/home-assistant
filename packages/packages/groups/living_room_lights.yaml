@@ -1,0 +1,11 @@
+# Light Groups
+group:
+  living_room_lights:
+    name: Living Room Lights
+    entities:
+      - light.tv_kast
+      - light.ledstrip
+      - light.vloerlamp
+      - light.eetkamer
+      - light.tv_plafond
+      - light.woonkamer

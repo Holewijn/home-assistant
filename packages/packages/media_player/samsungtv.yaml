@@ -1,0 +1,12 @@
+media_player:
+  # Use an ADB server to setup an Android TV device, provide
+  # an app name, and override the default turn on/off commands
+
+  - platform: samsungtv_tizen
+    host: !secret samsungtv_ip
+    broadcast_address: !secret samsungtv_ip
+    port: 8002
+    mac: !secret samsungtv_mac
+    update_method: "ping"
+    source_list: '{"TV": "KEY_HDMI", "Chromecast":"KEY_SOURCE+KEY_RIGHT+KEY_ENTER"}'
+    app_list: '{"Netflix": "11101200001", "YouTube": "111299001912", "Spotify": "3201606009684", "Plex": "3201512006963"}'

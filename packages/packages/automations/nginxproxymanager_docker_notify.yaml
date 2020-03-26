@@ -1,0 +1,15 @@
+automation:
+  - id: '233202007'
+    alias: '[ Notificatie ] NginxProxyManager Docker is Offline'
+    description: 'NginxProxyManager docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202007
+      domain: switch
+      entity_id: switch.tower_docker_nginxproxymanager
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: NginxProxyManager Docker is offline!
+      service: notify.notify

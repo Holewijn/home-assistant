@@ -1,0 +1,15 @@
+automation:
+  - id: '233202003'
+    alias: '[ Notificatie ] Bitwarden Docker is Offline'
+    description: 'Bitwarden docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202003
+      domain: switch
+      entity_id: switch.tower_docker_bitwarden
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: Bitwarden Docker is offline!
+      service: notify.notify

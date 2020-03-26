@@ -1,0 +1,22 @@
+# dwains_theme
+- type: custom:mod-card
+  style: |
+    ha-card {
+      padding: 0px 8px 20px 8px;
+    }
+  card:
+    type: vertical-stack
+    cards:
+      - type: custom:button-card
+        template: room_device
+        name: Android Batterij
+        color: var(--dwains-theme-accent)
+        entity: sensor.battery_level
+        show_last_changed: false
+        styles:
+          img_cell:
+            - width: 45px
+            - height: 45px
+            - background: var(--dwains-theme-background)
+            - color: white
+            - border-radius: 100%

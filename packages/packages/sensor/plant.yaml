@@ -1,0 +1,13 @@
+plant:
+  Olijfboom Links:
+    sensors:
+      moisture: sensor.xiaomi_miflora_moisture
+      #battery: sensor.olijfboom_links_battery_level
+      temperature: sensor.xiaomi_miflora_temperature
+      conductivity: sensor.xiaomi_miflora_soil_conductivity
+      brightness: sensor.xiaomi_miflora_illuminance
+    min_moisture: 15
+    max_moisture: 60
+    min_battery: 15
+    min_conductivity: 350
+    min_temperature: 10

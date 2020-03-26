@@ -1,0 +1,15 @@
+automation:
+  - id: '233202012'
+    alias: '[ Notificatie ] UnraidAPI Docker is Offline'
+    description: 'UnraidAPI docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202012
+      domain: switch
+      entity_id: switch.tower_docker_unraid_api
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: UnraidAPI Docker is offline!
+      service: notify.notify

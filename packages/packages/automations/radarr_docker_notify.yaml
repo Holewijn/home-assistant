@@ -1,0 +1,15 @@
+automation:
+  - id: '233202010'
+    alias: '[ Notificatie ] Radarr Docker is Offline'
+    description: 'Radarr docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202010
+      domain: switch
+      entity_id: switch.tower_docker_binhex_radarr
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: Radarr Docker is offline!
+      service: notify.notify

@@ -1,0 +1,15 @@
+automation:
+  - id: '233202006'
+    alias: '[ Notificatie ] Hassio Supervisor Docker is Offline'
+    description: 'Hassio Supervisor docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202006
+      domain: switch
+      entity_id: switch.tower_docker_hassio_supervisor
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: Hassio Supervisor Docker is offline!
+      service: notify.notify

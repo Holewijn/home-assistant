@@ -1,0 +1,15 @@
+automation:
+  - id: '233202002'
+    alias: '[ Notificatie ] Bazarr Docker is Offline'
+    description: 'Bazarr docker is offline op de unraid server. '
+    trigger:
+    - device_id: no233202002
+      domain: switch
+      entity_id: switch.tower_docker_bazarr
+      platform: device
+      type: turned_off
+    condition: []
+    action:
+    - data:
+        message: Bazarr Docker is offline!
+      service: notify.notify

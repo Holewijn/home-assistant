@@ -1,0 +1,11 @@
+persons: 
+  - name: Michiel Holewijn
+    track: person.michiel_holewijn
+    picture_path: 'images/persons/michiel.jpg'
+    addons: 
+      - name: Mobile Battery
+        icon: fas:battery-full
+        path: 'dwains-theme/addons/persons/android_battery.yaml'
+      - name: Air Visual
+        icon: fas:wind
+        path: 'dwains-theme/addons/persons/air_visual.yaml'
